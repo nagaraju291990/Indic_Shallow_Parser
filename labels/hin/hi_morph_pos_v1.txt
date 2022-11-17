@@ -1,0 +1,16 @@
+pn
+n
+psp
+avy
+adj
+num
+v
+punc
+nst
+adv
+unk
+s
+null
+०००
+c
+punk

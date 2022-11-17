@@ -1,0 +1,11 @@
+n
+v
+punc
+avy
+pn
+adj
+psp
+adv
+num
+nst
+unk
