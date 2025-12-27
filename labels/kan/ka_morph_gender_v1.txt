@@ -1,7 +1,0 @@
-any
-m
-f
-unk
-num
-punc
-n
