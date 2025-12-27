@@ -1,0 +1,6 @@
+any
+m
+f
+unk
+num
+punc

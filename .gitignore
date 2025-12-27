@@ -5,10 +5,11 @@ __pycache__/
 
 # C extensions
 *.so
-
+nov_12_2022_history_1.*
 # Distribution / packaging
 .Python
 build/
+models/
 develop-eggs/
 dist/
 downloads/

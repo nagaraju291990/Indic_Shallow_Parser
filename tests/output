@@ -1,0 +1,25 @@
+1	ट्रेन	ट्रेन	pn	DM_DMD	Gender=any|Number=sg|Person=3|Case=d|Vib=	_	B-NP	_
+2	में	में	n	N_NN	Gender=f|Number=sg|Person=3|Case=o|Vib=0	_	B-NP	_
+3	होने	हो	pn	DM_DMD	Gender=any|Number=sg|Person=3|Case=d|Vib=	_	B-NP	_
+4	वाले	वाला	psp	PSP	Gender=|Number=|Person=|Case=any|Vib=	_	I-NP	_
+5	हर	हर	v	V_VM	Gender=any|Number=any|Person=any|Case=o|Vib=ना	_	B-VGNN	_
+6	अपराध	अपराध	pn	DM_DMD	Gender=any|Number=sg|Person=3|Case=d|Vib=	_	B-NP	_
+7	में	में	psp	PSP	Gender=m|Number=sg|Person=|Case=o|Vib=	_	I-VGNN	_
+8	इस	यह	avy	QT_QTF	Gender=|Number=|Person=|Case=any|Vib=	_	B-NP	_
+9	गाँव	गाँव	n	N_NN	Gender=m|Number=sg|Person=3|Case=o|Vib=0	_	I-NP	_
+10	का	का	psp	PSP	Gender=|Number=|Person=|Case=any|Vib=	_	I-NP	_
+11	कोई	कोई	pn	DM_DMD	Gender=any|Number=sg|Person=3|Case=o|Vib=	_	B-NP	_
+12	न	न	n	N_NN	Gender=m|Number=sg|Person=3|Case=o|Vib=0	_	I-NP	_
+13	कोई	कोई	psp	PSP	Gender=m|Number=sg|Person=|Case=d|Vib=	_	I-NP	_
+14	शामिल	शामिल	pn	PR_PRI	Gender=any|Number=sg|Person=3|Case=d|Vib=0	_	B-NP	_
+15	मिल	मिल	avy	RP_RPD	Gender=|Number=|Person=|Case=any|Vib=	_	I-NP	_
+16	जाएगा	जा	pn	PR_PRI	Gender=any|Number=sg|Person=3|Case=d|Vib=0	_	I-NP	_
+17	।	।	adj	JJ	Gender=any|Number=any|Person=|Case=any|Vib=	_	B-JJP	_
+
+1	भारत	भारत	pn	DM_DMD	Gender=any|Number=sg|Person=3|Case=d|Vib=	_	B-NP	_
+2	एक	एक	n	N_NNP	Gender=m|Number=sg|Person=3|Case=d|Vib=0	_	B-NP	_
+3	लोकतांत्रिक	लोकतांत्रिक	num	QT_QTC	Gender=any|Number=any|Person=|Case=|Vib=	_	B-NP	_
+4	देश	देश	adj	JJ	Gender=any|Number=any|Person=|Case=d|Vib=	_	I-NP	_
+5	है	है	pn	DM_DMD	Gender=any|Number=sg|Person=3|Case=d|Vib=	_	B-NP	_
+6	।	।	pn	DM_DMD	Gender=any|Number=sg|Person=3|Case=d|Vib=	_	B-NP	_
+
