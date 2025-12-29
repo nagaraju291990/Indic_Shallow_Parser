@@ -2,14 +2,23 @@
 numpy==1.19.5
 
 # TensorFlow (GPU optional)
-tensorflow==2.4.4
-tensorflow-gpu==2.4.4
-tensorflow-text==2.4.1
-tensorflow-hub==0.12.0
+#tensorflow==2.4.4
+#tensorflow-gpu==2.4.4
+#tensorflow-text==2.4.1
+#tensorflow-hub==0.12.0
+
+## If using python 3.10 or 3.12
+tensorflow==2.16.2
+tensorflow-text==2.16.1
+tensorflow-hub==0.16.1
+
 
 # NLP utilities
-sentencepiece==0.1.97
-indic-nlp-library==0.81
+#sentencepiece==0.1.97
+#indic-nlp-library==0.81
+## If using python 3.10 or 3.12
+indic-nlp-library-0.92
+sentencepiece-0.2.1
 IL-Tokenizer==0.0.2
 Morfessor==2.0.6
 
