@@ -33,3 +33,5 @@ requests==2.27.1
 six==1.15.0
 typing-extensions==3.7.4.3
 
+# UTF-8 to WX conversion
+wxconv

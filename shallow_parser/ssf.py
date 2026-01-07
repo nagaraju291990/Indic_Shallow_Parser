@@ -1,4 +1,6 @@
 from .config import LANG_MAP
+from wxconv import WXC
+
 
 def ssf_sentence_start(i):
     return f'<Sentence id="{i}">'
@@ -7,6 +9,7 @@ def ssf_sentence_end():
     return "</Sentence>"
 
 def format_as_ssf(parsed_sentences, language):
+    conv = WXC(order='utf2wx', lang=language)
     inlang = LANG_MAP[language]
     output = []
     sent_id = 1
@@ -25,7 +28,7 @@ def format_as_ssf(parsed_sentences, language):
         mper = sent.get(inlang + "_morph_person", [w + "$%:%$ " for w in words])
         mc = sent.get(inlang + "_morph_case", [w + "$%:%$ " for w in words])
         mv = sent.get(inlang + "_morph_vib", [w + "$%:%$ " for w in words])
-
+        ms = [conv.convert(mv_i.split("$%:%$")[1]) for mv_i in mv]
         chunk_id = 0
         token_id = 0
         open_chunk = False
@@ -54,7 +57,8 @@ def format_as_ssf(parsed_sentences, language):
                 f"{mper[i].split('$%:%$')[1]},"
                 f"{mc[i].split('$%:%$')[1]},"
                 f"{mv[i].split('$%:%$')[1]},"
-                f"{mv[i].split('$%:%$')[1]}'>"
+                f"{mv[i].split('$%:%$')[1]},"
+                f"{ms[i]}'>"
             )
 
             output.append(
