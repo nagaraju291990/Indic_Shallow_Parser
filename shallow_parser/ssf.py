@@ -57,7 +57,6 @@ def format_as_ssf(parsed_sentences, language):
                 f"{mper[i].split('$%:%$')[1]},"
                 f"{mc[i].split('$%:%$')[1]},"
                 f"{mv[i].split('$%:%$')[1]},"
-                f"{mv[i].split('$%:%$')[1]},"
                 f"{ms[i]}'>"
             )
 
@@ -72,4 +71,3 @@ def format_as_ssf(parsed_sentences, language):
         sent_id += 1
 
     return output
-
