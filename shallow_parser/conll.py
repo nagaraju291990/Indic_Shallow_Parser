@@ -1,13 +1,15 @@
 # shallow_parser/conll.py
 
 from .config import LANG_MAP
+from wxconv import WXC
+from re import search
 
 def format_as_conll(parsed_sentences, language):
     """
     Convert parsed output to CoNLL format.
     One blank line between sentences.
     """
-
+    conv = WXC(order='utf2wx', lang=language)
     inlang = LANG_MAP[language]
     lines = []
 
@@ -24,7 +26,15 @@ def format_as_conll(parsed_sentences, language):
         person = sent.get(inlang + "_morph_person", [])
         case = sent.get(inlang + "_morph_case", [])
         vib = sent.get(inlang + "_morph_vib", [])
-
+        suff = []
+        for index, w_v in enumerate(vib):
+          w, i_v = w_v.split('$%:%$')
+          assert w == words[index]
+          if i_v in ['', '0']:
+            suff.append(w + '$%:%$' + i_v)
+          else:
+            i_suff = conv.convert(i_v)
+            suff.append(w + '$%:%$' + i_suff)
         chunk = sent.get("chunk", [])
 
         for i, word in enumerate(words):
@@ -38,7 +48,7 @@ def format_as_conll(parsed_sentences, language):
             feats.append(f"Person={val(person)}")
             feats.append(f"Case={val(case)}")
             feats.append(f"Vib={val(vib)}")
-
+            feats.append(f"Suff={val(suff)}")
             feat_str = "|".join(
                 f for f in feats if not f.endswith("=_")
             ) or "_"
@@ -60,4 +70,3 @@ def format_as_conll(parsed_sentences, language):
         lines.append("")  # blank line between sentences
 
     return lines
-
