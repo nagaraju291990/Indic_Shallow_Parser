@@ -58,7 +58,10 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
-
+### for python3.12 use
+```bash
+requirements_python3.12.txt
+```
 For GPU support, CUDA 11 and cuDNN 8 are required. CPU only usage works without additional setup.
 
 ---
@@ -75,6 +78,12 @@ This downloads and places all required models in the correct directory structure
 ---
 
 ## Usage
+
+### API + ShalloParser (To run Clause boundary follow steps in cb_hindi_model/README.md)
+
+```bash
+python3 run_shallow_parser_cb.py
+```
 
 ### Python API
 
