@@ -93,7 +93,7 @@ def parse_cb_to_bio(cb_output, tokens):
     return bio_tags
 
 # === Config ===
-HF_TOKEN = "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"
+HF_TOKEN = "YOUR TOKEN HERE"
 CB_MODEL_PATH = "./cb_hindi_model/model"
 
 # === Load CB Model ===
