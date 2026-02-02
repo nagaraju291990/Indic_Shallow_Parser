@@ -1,0 +1,18 @@
+numpy==1.26.4
+pandas==2.2.2
+PyYAML==6.0.3
+
+tensorflow==2.18.1
+tensorflow-text==2.18.1
+tensorflow-hub==0.16.1
+
+indic-nlp-library==0.92
+sentencepiece==0.2.1
+Morfessor==2.0.6
+
+requests>=2.31
+six>=1.16
+typing-extensions>=4.9
+
+# UTF-8 to WX conversion
+wxconv

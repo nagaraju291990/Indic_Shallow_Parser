@@ -17,8 +17,8 @@ tensorflow-hub==0.16.1
 #sentencepiece==0.1.97
 #indic-nlp-library==0.81
 ## If using python 3.10 or 3.12
-indic-nlp-library-0.92
-sentencepiece-0.2.1
+indic-nlp-library==0.92
+sentencepiece==0.2.1
 IL-Tokenizer==0.0.2
 Morfessor==2.0.6
 
